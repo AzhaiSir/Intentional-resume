@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>YCX简历</title>
+</head>
+<body>
+    <style id="style"></style>
+    <div id="html">hi</div>
+    <div id="div1Wrapper">
+        <div id="div1"></div>
+    </div>
+    <style>*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #demo{
+            /*设置文本换行*/
+            word-break:break-all;
+        }
+        #div1{
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+        #div1::before{
+            content:"";
+            display:block;
+            position: absolute;
+            background:radial-gradient(circle,
+            rgba(0,0,0,1)0%,
+            rgba(0,0,0,1)20%,
+            rgba(255,255,255,1)20%,
+            rgba(255,255,255,1)100%,
+            rgba(0,0,0,1)100%);
+        }
+        #div1::after{
+            content:'';
+            display:block;
+            position: absolute;
+    background:radial-gradient(circle,
+            rgba(255,255,255,1)0%,
+            rgba(255,255,255,1)20%,
+            rgba(0,0,0,1)20%,
+            rgba(0,0,0,1)100%);
+        }
+        @media(max-width:500px){
+            #html{
+                height:65vh;
+                overflow: auto;
+            }
+            #div1{
+                position: relative;
+                top:10%;
+                right:0;
+                margin:0 auto;
+            }
+            #div1Wrapper{
+                height:35vh;
+            }
+        }</style>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+</html>
